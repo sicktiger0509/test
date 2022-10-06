@@ -64,20 +64,20 @@
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
-      
         if(prediction[i].probability.toFixed(2)>=0.60)
         {
               const input= document.getElementByid("inpuutText");
               input.value=prediction[i].className;
         }
         
+        
+        
         }
     }
 </script>
-<br><br>
+
+  <br><br>
   인식된 수어는
   <input id='inputText'type="text"/>입니다 <br>
- 
-  
 </body>
 </html>
